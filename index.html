@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Chatbox</title>
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+
+	<div class="chatbox-wrapper">
+		<div class="chatbox-toggle">
+			<i class='bx bxs-message-add'></i>
+		</div>
+		<div class="chatbox-message-wrapper">
+			<div class="chatbox-message-header">
+				<div class="chatbox-message-profile">
+					<i class='bx bxs-user-circle'></i>
+					<div>
+						<h4 class="chatbox-message-name">Nana Kawano</h4>
+						<p class="chatbox-message-status">online</p>
+					</div>
+				</div>
+				<div class="chatbox-message-dropdown">
+					<i class='bx bx-dots-horizontal-rounded chatbox-message-dropdown-toggle'></i>
+					<ul class="chatbox-message-dropdown-menu">
+						<li>
+							<a href="#">Search</a>
+						</li>
+						<li>
+							<a href="#">Report</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+            <!---BOTAO FEITO PROXIMO PASSO BUGG-->
+			<div class="chatbox-message-content">
+				<h4 class="chatbox-message-no-message"> Tens curiosidades sobre diferenças entre Portugal e o Brasil ?</h4>
+                
+                    
+                    <h2> Então vamos para um quiz?!</h2>
+                    <main>
+                    <div class="content">
+                            <!--span de quantidade-->
+                        <span class="spnQtd"></span>
+                        <!--span de perguntas-->
+                        <span class="question"></span>
+                        <!--span de respostas-->
+                        <div class="answers"></div>
+                    </div>
+                    <div class="finish">
+                        <span></span>
+                        <br>
+                         <!--botão reiniciar-->
+                        <button>Reiniciar</button>
+                    </div>
+                    </main>
+                        <script src="script.js" type="module"></script>
+                        <!--"module" pois importamos outros js-->
+                            
+                <!-- <div class="chatbox-message-item sent">
+					<span class="chatbox-message-item-text">
+						Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Quod, fugiat?
+					</span>
+					<span class="chatbox-message-item-time">08:30</span>
+				</div>
+				<div class="chatbox-message-item received">
+					<span class="chatbox-message-item-text">
+						Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Quod, fugiat?
+					</span>
+					<span class="chatbox-message-item-time">08:30</span>
+				</div> -->
+			</div>
+			<div class="chatbox-message-bottom">
+				<form action="#" class="chatbox-message-form">
+					<textarea rows="1" placeholder="Pergunte aqui..." class="chatbox-message-input"></textarea>
+					<button type="submit" class="chatbox-message-submit"><i class='bx bx-send' ></i></button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<script src="script.js"></script>
+</body>
+</html>
